@@ -2,15 +2,14 @@
 
 from setuptools import setup
 
-setup(name='target-bigquery',
+setup(name='target-bq',
       version='1.4.0',
       description='Singer.io target for writing data to Google BigQuery',
-      author='RealSelf Business Intelligence',
-      url='https://github.com/RealSelf/target-bigquery',
+      author='Terence Sigankais / RealSelf Business Intelligence',
+      url='https://github.com/GrowingData/target-bigquery',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
-      py_modules=['target_bigquery'],
+      py_modules=['target_bq'],
       install_requires=[
-          'jsonschema==2.6.0',
           'singer-python>=1.5.0',
           'google-api-python-client>=1.6.2',
           'google-cloud>=0.34.0',
@@ -19,6 +18,6 @@ setup(name='target-bigquery',
       ],
       entry_points='''
           [console_scripts]
-          target-bigquery=target_bigquery:main
+          target-bq=target_bq:main
       ''',
 )
